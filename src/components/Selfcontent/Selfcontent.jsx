@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Selfcontent.css";
 import portrait from "../../assets/images/selfPortraitSmall.png";
+import portraitMobile from "../../assets/images/mobileImages/selfmobile.png";
 
 import Textbox from "../Textbox/Textbox";
 
@@ -38,25 +39,32 @@ class Selfcontent extends Component {
     return (
       <div className="selfContentContainer">
         <div className="containerBoundaryBorder" />
-        <img
-          id="selfPortrait"
-          className={"selfPortrait"}
-          src={portrait}
-          alt="portrait"
-          ref={el => (this.selfPortrait = el)}
-          style={{ left: this.state.imgLeft }}
-          onLoad={() => {
-            this.setState({ imgHeight: this.selfPortrait.clientHeight });
-            document.getElementById("selfPortrait").classList.add('portraitSlideIn')
-            setTimeout(() => {
-              document.getElementById("selfPortrait").classList.add('elementOpacityFull')
+        <picture>
+          <source media="(min-width: 780px)" srcSet={portrait} />
+          <img
+            id="selfPortrait"
+            className={"selfPortrait"}
+            src={portraitMobile}
+            alt="portrait"
+            ref={el => (this.selfPortrait = el)}
+            style={{ left: this.state.imgLeft }}
+            onLoad={() => {
+              this.setState({ imgHeight: this.selfPortrait.clientHeight });
               document
                 .getElementById("selfPortrait")
-                .classList.remove("portraitSlideIn");
-              this.setState({ imgLeft: window.innerWidth * -0.025 });
-            }, 1300);
-          }}
-        />
+                .classList.add("portraitSlideIn");
+              setTimeout(() => {
+                document
+                  .getElementById("selfPortrait")
+                  .classList.add("elementOpacityFull");
+                document
+                  .getElementById("selfPortrait")
+                  .classList.remove("portraitSlideIn");
+                this.setState({ imgLeft: window.innerWidth * -0.025 });
+              }, 1300);
+            }}
+          />
+        </picture>
         <div id="textBox" className="textBox">
           <Textbox
             text={
