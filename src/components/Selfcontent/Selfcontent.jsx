@@ -75,7 +75,7 @@ class Selfcontent extends Component {
             }
           />
         </div>
-        <div className="containerBoundaryBorder" />
+        <div className="containerBoundaryBorder containerBoundaryBorderBottom" />
       </div>
     );
   }

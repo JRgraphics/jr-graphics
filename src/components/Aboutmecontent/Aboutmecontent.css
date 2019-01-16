@@ -1,8 +1,9 @@
 .aboutMeContainer {
   display: inline-block;
   position: relative;
-  height: calc(80vh - 4vh - 6px);
+  height: calc(80vh - 4vh - 1px);
   width: 100vw;
+  margin-top: -8px;
 }
 
 .aboutMeText {
@@ -76,6 +77,6 @@
     margin: 3% 15vw 3% 15vw;
   }
   #bottomBorder {
-    bottom: -6px;
+    bottom: -2px;
   }
 }

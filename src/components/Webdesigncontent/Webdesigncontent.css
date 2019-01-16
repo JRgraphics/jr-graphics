@@ -1,8 +1,9 @@
 .webDesignContainer {
   display: inline-block;
-  height: calc(80vh - 4vh - 6px);
-  width: 100vw;
   position: relative;
+  height: calc(80vh - 4vh + 1px);
+  width: 100vw;
+  margin-top: -8px;
 }
 
 .textOutline {

@@ -38,7 +38,7 @@ class Webdesigncontent extends Component {
           <img className="blackBox box3" src={blackbox} alt="img" />
           <img className="blackBox box4" src={blackbox} alt="img" />
         </div>
-        <div className="containerBoundaryBorder" />
+        <div className="containerBoundaryBorder containerBoundaryBorderBottom" />
       </div>
     );
   }

@@ -66,6 +66,6 @@
 
 @media only screen and (max-width: 780px) and (orientation: portrait) {
   .selfContentContainer {
-    height: calc((80vh - 4vh - 2px) / 2);
+    height: calc((80vh - 4vh) / 2);
   }
 }

@@ -1,9 +1,9 @@
 .galleryContainer {
   display: inline-block;
   position: relative;
-  height: calc(80vh - 4vh - 6px);
+  height: calc(80vh - 4vh);
   width: 100vw;
-  margin-top: calc(20vh + 4vh - 4px);
+  margin-top: calc(20vh + 4vh - 8px);
   opacity: 1;
   overflow-y: hidden;
   overflow-x: auto;
@@ -16,6 +16,6 @@
 
 @media only screen and (max-width: 780px) and (orientation: portrait) {
   .galleryContainer {
-    height: calc((80vh - 4vh - 6px) / 2);
+    height: calc((80vh - 4vh + 8px) / 2);
   }
 }

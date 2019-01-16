@@ -46,6 +46,7 @@ class Headerbar extends Component {
     }, 100);
   };
 
+  /*
   handleLinkClicked = linkName => {
     const selfContentHeight =
       window.innerHeight * 0.8 - (window.innerHeight * 0.04 + 2);
@@ -64,6 +65,7 @@ class Headerbar extends Component {
       this.addCurrentNaviLink(0);
     }
     if (linkName === "Gallery") {
+      
       if (window.innerWidth <= 780) {
         window.scroll({
           // calc(80vh - 4vh + 4px)
@@ -81,6 +83,7 @@ class Headerbar extends Component {
           behavior: "smooth"
         });
       }
+      
       this.addCurrentNaviLink(1);
     }
     if (linkName === "Web Design") {
@@ -124,6 +127,7 @@ class Headerbar extends Component {
       .getElementsByClassName("naviLink") // eslint-disable-next-line
       [id].classList.remove("currentNaviLink");
   };
+  */
 
   /*TODO:
 
@@ -144,7 +148,7 @@ class Headerbar extends Component {
               {this.state.links.map(link => (
                 <Navilink
                   key={link.id}
-                  onLinkClicked={this.handleLinkClicked}
+                  onLinkClicked={() => this.props.onNaviRequested(link.name)}
                   name={link.name}
                   id={link.id}
                 />
