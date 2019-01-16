@@ -1,0 +1,170 @@
+.headContainer {
+  position: fixed;
+  height: calc(20vh + 4vh);
+  z-index: 6;
+}
+
+.logoContainer {
+  display: inline-block;
+  position: relative;
+  height: 20vh;
+  width: 20vh;
+  margin: 2vh;
+  z-index: 3;
+}
+
+.logoBorder {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation: header-logoBorder-spin 20s linear forwards infinite;
+}
+
+.headerLogo {
+  display: inline-block;
+  position: relative;
+  height: 70%;
+  width: 70%;
+  top: 45%;
+  left: 45%;
+  transform: translateY(-50%) translateX(-50%);
+  opacity: 0;
+  animation: header-logo-fade-in 1.5s forwards ease-out;
+}
+
+.headerLinkBar {
+  position: absolute;
+  width: calc(100vw - (20vh + 4vh));
+  font-size: 3vw;
+  top: 50%;
+  left: calc(20vh + 4vh);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.headerLinkBarSub {
+  text-align: center;
+  z-index: 10;
+}
+
+.naviLink {
+  opacity: 0;
+}
+
+.topBorder {
+  position: absolute;
+  height: 2px;
+  width: 100vw;
+  top: 0;
+  left: 100vw;
+  margin-top: calc(20vh + (4vh - 2px));
+  border-bottom: 2px solid rgb(255, 255, 255);
+  opacity: 0;
+  animation: top-border-slide-in 1.3s forwards ease-out;
+  z-index: 4;
+}
+
+.topBorderPosition {
+  margin-top: calc(20vh + (4vh - 2px));
+}
+
+.leftBorder {
+  position: absolute;
+  height: calc(20vh + 4vh);
+  width: 2px;
+  top: 0;
+  left: 0;
+  border-right: 2px solid rgb(255, 255, 255);
+  opacity: 0;
+  animation: left-border-slide-in 0.8s 0.5s forwards ease-out;
+  z-index: 4;
+}
+
+.leftBorderPosition {
+  margin-left: calc(20vh + 4vh);
+}
+
+.topRightFaderBox {
+  display: none;
+  position: fixed;
+  height: calc(20vh + 4vh);
+  width: 70vw;
+  background-color: rgb(0, 0, 0);
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 0 5vh 5vh rgb(0, 0, 0);
+}
+
+.fade-in {
+  animation: fade-in 1s forwards ease-out;
+}
+
+.opacityFull {
+  opacity: 1;
+}
+
+.currentNaviLink {
+  animation: current-link-highlight 1.5s forwards linear;
+}
+
+@keyframes header-logoBorder-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes header-logo-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes top-border-slide-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes left-border-slide-in {
+  from {
+    opacity: 0;
+    margin-left: -30vw;
+  }
+  to {
+    opacity: 1;
+    margin-left: calc(20vh + 4vh);
+  }
+}
+
+@keyframes current-link-highlight {
+  0% {
+    text-shadow: 0 0 0 rgb(255, 255, 255);
+  }
+  40% {
+    text-shadow: 0 0 4vw rgb(255, 255, 255);
+  }
+  80% {
+    text-shadow: 0 0 0 rgb(255, 255, 255);
+  }
+  80% {
+    text-shadow: 3px 3px 18px rgb(0, 0, 0), -3px -3px 18px rgb(0, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 780px) and (orientation: portrait) {
+  .headerLinkBar {
+    font-size: 5vw;
+  }
+}

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.hidden-overflow {
+  overflow-y: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

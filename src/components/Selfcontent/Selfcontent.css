@@ -1,0 +1,72 @@
+.selfContentContainer {
+  display: inline-block;
+  position: relative;
+  height: calc(80vh - 4vh);
+  width: 100vw;
+  top: calc(20vh + 4vh);
+  overflow: hidden;
+}
+
+.selfPortrait {
+  display: inline-block;
+  position: relative;
+  height: calc(100% - 4px);
+  width: auto;
+  max-width: 60vw;
+  transform: rotateY(180deg);
+  opacity: 0;
+  z-index: 1;
+}
+
+.textBox {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  font-size: 2.5vw;
+  margin-bottom: calc(20vh + 4vh);
+  padding: 0 5vw 0 5vw;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: fade-in 0.7s 0.6s forwards;
+}
+
+.portraitSlideIn {
+  left: -20vw;
+  animation: portrait-slide-in 1.3s forwards ease-out;
+}
+
+.elementOpacityFull {
+  opacity: 1;
+}
+
+@keyframes portrait-slide-in {
+  from {
+    opacity: 0;
+    left: -20vw;
+  }
+  25% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    left: -2.5vw;
+  }
+}
+
+@keyframes bottom-border-slide-in {
+  from {
+    opacity: 0;
+    left: 100vw;
+  }
+  to {
+    opacity: 1;
+    left: 0vw;
+  }
+}
+
+@media only screen and (max-width: 780px) and (orientation: portrait) {
+  .selfContentContainer {
+    height: calc((80vh - 4vh - 2px) / 2);
+  }
+}

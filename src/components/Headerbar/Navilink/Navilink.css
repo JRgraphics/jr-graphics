@@ -1,0 +1,24 @@
+.naviLink {
+  display: inline-block;
+  margin-left: 7vw;
+  text-shadow: 3px 3px 18px rgb(0, 0, 0), -3px -3px 18px rgb(0, 0, 0);
+  cursor: pointer;
+  z-index: 6;
+}
+
+@keyframes header-logo-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 780px) and (orientation: portrait) {
+  .naviLink {
+    width: 100%;
+    clear: both;
+    margin-left: 0;
+  }
+}

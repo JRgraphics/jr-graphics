@@ -1,0 +1,81 @@
+.aboutMeContainer {
+  display: inline-block;
+  position: relative;
+  height: calc(80vh - 4vh - 6px);
+  width: 100vw;
+}
+
+.aboutMeText {
+  display: inline-block;
+  position: absolute;
+  font-size: 2vw;
+  height: calc(90% - 4px);
+  width: 70%;
+  margin: 0 15vw 0 15vw;
+  top: calc((100% - (90% - 8px)) / 2);
+  text-align: justify;
+  overflow-y: scroll;
+  z-index: 6;
+}
+
+.aboutMeText::-webkit-scrollbar {
+  display: none;
+}
+
+.socialNetworkHeadline {
+  text-align: center;
+}
+
+.linkedInImg {
+  display: inline-block;
+  width: 7.5%;
+  height: auto;
+  cursor: pointer;
+}
+
+.faderBarTop {
+  display: inline-block;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  height: 2.5%;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  box-shadow: 0 3vh 7.5vh black, 0 3vh 7.5vh black, 0 3vh 7.5vh black,
+    0 3vh 7.5vh black, 0 3vh 7.5vh black, 0 3vh 7.5vh black;
+  z-index: 7;
+}
+
+.faderBarBot {
+  display: inline-block;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  height: 2.5%;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -3vh 7.5vh black, 0 -3vh 7.5vh black, 0 -3vh 7.5vh black,
+    0 -3vh 7.5vh black, 0 -3vh 7.5vh black, 0 -3vh 7.5vh black;
+  z-index: 7;
+}
+
+#scrollTop {
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+}
+
+#bottomBorder {
+  bottom: -2px;
+}
+
+@media only screen and (max-width: 780px) and (orientation: portrait) {
+  .aboutMeText {
+    font-size: 3vw;
+    height: calc(84% - 4px);
+    margin: 3% 15vw 3% 15vw;
+  }
+  #bottomBorder {
+    bottom: -6px;
+  }
+}

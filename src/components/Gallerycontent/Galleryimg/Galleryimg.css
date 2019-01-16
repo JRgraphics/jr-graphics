@@ -1,0 +1,19 @@
+.galleryImg {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  opacity: 0;
+}
+
+.fadeInGalleryImg {
+  animation: fade-in-gallery-img 0.5s forwards ease-out;
+}
+
+@keyframes fade-in-gallery-img {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

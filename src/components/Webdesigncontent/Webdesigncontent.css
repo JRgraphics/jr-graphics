@@ -1,0 +1,140 @@
+.webDesignContainer {
+  display: inline-block;
+  height: calc(80vh - 4vh - 6px);
+  width: 100vw;
+  position: relative;
+}
+
+.textOutline {
+  display: inline-block;
+  position: absolute;
+  height: 70%;
+  width: 70vw;
+  top: 50%;
+  margin-left: 15vw;
+  transform: translateY(-50%);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.webDesignInfo {
+  position: relative;
+  width: 70%;
+  margin: 0 15% 0 15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.reactLink {
+  animation: react-link-highlight 2.5s forwards ease-in-out infinite;
+}
+
+.webDesignLogo {
+  display: inline-block;
+  position: absolute;
+  max-width: 40%;
+  max-height: 30%;
+  margin: 0 15% 0 15%;
+  bottom: 5%;
+}
+
+.blackBox {
+  display: block;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+}
+
+.box1 {
+  top: -32px;
+  left: -28px;
+  animation: move-black-box-down 15s forwards ease-in-out infinite;
+}
+
+.box2 {
+  top: calc(100% - 2px);
+  left: -32px;
+  animation: move-black-box-left 15s forwards ease-in-out infinite;
+}
+
+.box3 {
+  top: calc(100% + 2px);
+  left: calc(100% - 2px);
+  animation: move-black-box-up 15s forwards ease-in-out infinite;
+}
+
+.box4 {
+  top: -28px;
+  left: calc(100% + 2px);
+  animation: move-black-box-right 15s forwards ease-in-out infinite;
+}
+
+@keyframes move-black-box-down {
+  0% {
+    top: -32px;
+    left: -28px;
+  }
+  50% {
+    top: calc(100% + 2px);
+    left: -28px;
+  }
+  100% {
+    top: calc(100% + 2px);
+    left: -28px;
+  }
+}
+@keyframes move-black-box-left {
+  0% {
+    top: calc(100% - 2px);
+    left: -32px;
+  }
+  50% {
+    top: calc(100% - 2px);
+    left: -32px;
+  }
+  100% {
+    top: calc(100% - 2px);
+    left: calc(100% + 2px);
+  }
+}
+
+@keyframes move-black-box-up {
+  0% {
+    top: calc(100% + 2px);
+    left: calc(100% - 2px);
+  }
+  50% {
+    top: -32px;
+    left: calc(100% - 2px);
+  }
+  100% {
+    top: -32px;
+    left: calc(100% - 2px);
+  }
+}
+
+@keyframes move-black-box-right {
+  0% {
+    top: -28px;
+    left: calc(100% + 2px);
+  }
+  50% {
+    top: -28px;
+    left: calc(100% + 2px);
+  }
+  100% {
+    top: -28px;
+    left: -32px;
+  }
+}
+
+@keyframes react-link-highlight {
+  0% {
+    text-shadow: 0 0 0 rgb(71, 155, 250);
+  }
+  40% {
+    text-shadow: 2px 2px 5px rgb(71, 155, 250), -2px -2px 5px rgb(71, 155, 250);
+  }
+  80% {
+    text-shadow: 0 0 0 rgb(71, 155, 250);
+  }
+}
