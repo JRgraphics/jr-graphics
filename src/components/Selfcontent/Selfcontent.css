@@ -13,7 +13,6 @@
   height: calc(100% - 4px);
   width: auto;
   max-width: 60vw;
-  transform: rotateY(180deg);
   opacity: 0;
   z-index: 1;
 }

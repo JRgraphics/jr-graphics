@@ -4,12 +4,12 @@ import "./Gallerycontent.css";
 import Galleryimg from "./Galleryimg/Galleryimg";
 import Sliderbutton from "./Sliderbutton/Sliderbutton";
 
-import img1 from "../../assets/images/melt_poster.png";
-import img2 from "../../assets/images/CCCP_poster.png";
-import img3 from "../../assets/images/avaruus_poster.png";
-import img4 from "../../assets/images/ghetto_poster.png";
-import img5 from "../../assets/images/jungle_poster.png";
-import img6 from "../../assets/images/FWR_poster.png";
+import img1 from "../../assets/images/smallPosters/meltingSmall.png";
+import img2 from "../../assets/images/smallPosters/cccpSmall.png";
+import img3 from "../../assets/images/smallPosters/avaruusSmall.png";
+import img4 from "../../assets/images/smallPosters/ghettoSmall.png";
+import img5 from "../../assets/images/smallPosters/jungleSmall.png";
+import img6 from "../../assets/images/smallPosters/fwrSmall.png";
 
 class Gallerycontent extends Component {
   state = {

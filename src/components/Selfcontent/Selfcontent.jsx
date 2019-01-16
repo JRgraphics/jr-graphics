@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Selfcontent.css";
-import portrait from "../../assets/images/selfportrait.png";
+import portrait from "../../assets/images/selfPortraitSmall.png";
 
 import Textbox from "../Textbox/Textbox";
 
