@@ -14,7 +14,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 780px) and (orientation: portrait) {
+@media only screen and (max-width: 780px) {
   .galleryContainer {
     height: calc((80vh - 4vh + 8px) / 2);
   }

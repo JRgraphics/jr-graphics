@@ -31,6 +31,9 @@
   max-width: 100%;
   width: auto;
   opacity: 0;
+}
+
+.fade-in-img {
   animation: fade-in 0.5s forwards ease-out;
 }
 

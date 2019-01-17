@@ -15,7 +15,7 @@
   }
 }
 
-@media only screen and (max-width: 780px) and (orientation: portrait) {
+@media only screen and (max-width: 780px) {
   .naviLink {
     width: 100%;
     clear: both;

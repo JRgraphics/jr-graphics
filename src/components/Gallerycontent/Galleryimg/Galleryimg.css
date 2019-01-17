@@ -2,6 +2,10 @@
   display: inline-block;
   height: calc(100% - 8px);
   width: auto;
+  transition: opacity 0.5s;
+}
+
+.opacityZero {
   opacity: 0;
 }
 

@@ -163,7 +163,7 @@
   }
 }
 
-@media only screen and (max-width: 780px) and (orientation: portrait) {
+@media only screen and (max-width: 780px) {
   .headerLinkBar {
     font-size: 5vw;
   }

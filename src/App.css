@@ -20,12 +20,22 @@ a:active {
   z-index: 2;
   left: 100vw;
   opacity: 0;
-  animation: bottom-border-slide-in 1.3s forwards ease-out;
+  animation: bottom-border-slide-in 1s forwards ease-out;
   z-index: 8;
 }
 
 .containerBoundaryBorderBottom {
   bottom: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 @keyframes fade-in {

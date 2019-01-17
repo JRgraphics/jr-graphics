@@ -7,7 +7,7 @@ class Textbox extends Component {
   render() {
     return (
       <div>
-        <div className="text">
+        <div className="text noselect">
           {this.props.text.split("/n").map((item, key) => {
             return (
               <span key={key}>

@@ -13,7 +13,7 @@ class Navilink extends Component {
   render() {
     return (
       <div
-        className="naviLink"
+        className="naviLink noselect"
         onClick={() => this.props.onLinkClicked(this.props.name)}
       >
         {this.props.name}

@@ -70,7 +70,7 @@
   bottom: -2px;
 }
 
-@media only screen and (max-width: 780px) and (orientation: portrait) {
+@media only screen and (max-width: 780px) {
   .aboutMeText {
     font-size: 3vw;
     height: calc(84% - 4px);

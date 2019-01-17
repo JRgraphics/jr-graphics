@@ -11,7 +11,7 @@ class Webdesigncontent extends Component {
       <div className="webDesignContainer">
         <div className="containerBoundaryBorder" />
         <div className="textOutline">
-          <div className="webDesignInfo">
+          <div className="webDesignInfo noselect">
             This site was created using{" "}
             <a
               target="_blank"

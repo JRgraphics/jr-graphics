@@ -26,6 +26,9 @@ class Zoomedimage extends Component {
           id="modalImg"
           src={this.props.imgUrl}
           alt="img"
+          onLoad={() => {
+            document.getElementById("modalImg").classList.add("fade-in-img");
+          }}
         />
       </div>
     );

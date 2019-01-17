@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./Gallerycontent.css";
 
 import Galleryimg from "./Galleryimg/Galleryimg";
-import Sliderbutton from "./Sliderbutton/Sliderbutton";
 
 import img1 from "../../assets/images/smallPosters/meltingSmall.png";
 import img2 from "../../assets/images/smallPosters/cccpSmall.png";
@@ -36,9 +35,6 @@ class Gallerycontent extends Component {
   renderImg = () => {
     return <Galleryimg imgUrl={this.state.imgUrls[0].imgUrl} />;
   };
-  renderSliderbutton = imgUrl => {
-    return <Sliderbutton />;
-  };
 
   render() {
     return (
@@ -55,7 +51,7 @@ class Gallerycontent extends Component {
             }
           />
         ))}
-        <div className="containerBoundaryBorder" />
+        <div className="containerBoundaryBorder containerBoundaryBorderBottom" />
       </div>
     );
   }
