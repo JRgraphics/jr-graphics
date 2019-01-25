@@ -3,13 +3,13 @@ import "./Gallerycontent.css";
 
 import Galleryimg from "./Galleryimg/Galleryimg";
 
-import img1 from "../../assets/images/smallPosters/meltingSmall.png";
-import img2 from "../../assets/images/smallPosters/cccpSmall.png";
-import img3 from "../../assets/images/smallPosters/avaruusSmall.png";
-import img4 from "../../assets/images/smallPosters/ghettoSmall.png";
-import img5 from "../../assets/images/smallPosters/jungleSmall.png";
-import img6 from "../../assets/images/smallPosters/fwrSmall.png";
-import img7 from "../../assets/images/smallPosters/discoSmall.png";
+import img1 from "../../assets/images/release/melting.png";
+import img2 from "../../assets/images/release/CCCP.png";
+import img3 from "../../assets/images/release/avaruus.png";
+import img4 from "../../assets/images/release/ghetto.png";
+import img5 from "../../assets/images/release/jungle.png";
+import img6 from "../../assets/images/release/FWR.png";
+import img7 from "../../assets/images/release/disco.png";
 
 import img1mobile from "../../assets/images/mobileImages/meltmobile.png";
 import img2mobile from "../../assets/images/mobileImages/cccpmobile.png";
